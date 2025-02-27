@@ -10,9 +10,10 @@ export default function Home() {
 	const [addTaskOpen, setAddTaskOpen] = useState(false);
 	const [editTaskData, setEditTaskData] = useState<Task | null>(null);
 	const [editTaskOpen, setEditTaskOpen] = useState(false);
-	const [filter, setFilter] = useState<"all" | "todo" | "onProgress" | "done">("all");
+	const [filter, setFilter] = useState<"all" | "todo" | "onProgress" | "done" | "timeOut">("all");
 	const [showExpiredTasks, setShowExpiredTasks] = useState(false); // New state for expired tasks
-	const filterOptions: (typeof filter)[] = ["all", "todo", "onProgress", "done"];
+	const filterOptions: (typeof filter)[] = ["all", "todo", "onProgress", "done", "timeOut"];
+
 
 	useEffect(() => {
 		fetchTasks();
