@@ -1,1 +1,79 @@
-@@ -1,50 +1,77 @@# React + TypeScript + ViteThis template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.Currently, two official plugins are available:- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh## Expanding the ESLint configurationIf you are developing a production application, we recommend updating the configuration to enable type aware lint rules:- Configure the top-level `parserOptions` property like this:```jsexport default tseslint.config({  languageOptions: {    // other options...    parserOptions: {      project: ['./tsconfig.node.json', './tsconfig.app.json'],      tsconfigRootDir: import.meta.dirname,    },  },})```- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`- Optionally add `...tseslint.configs.stylisticTypeChecked`- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:```js// eslint.config.jsimport react from 'eslint-plugin-react'export default tseslint.config({  // Set the react version  settings: { react: { version: '18.3' } },  plugins: {    // Add the react plugin    react,  },  rules: {    // other rules...    // Enable its recommended rules    ...react.configs.recommended.rules,    ...react.configs['jsx-runtime'].rules,  },})```# Seequenze Technologies AssignmentThis project is a full-stack task management application built using **React, TypeScript, and Vite** for the frontend and **Node.js with Express and MongoDB** for the backend.## Deployment Links- **Frontend URL:** [Seequenze Technologies Assignment](https://seequenze-technologies-assignment-ashen.vercel.app/)- **Backend URL:** [Seequenze Technologies API](https://seequenze-technologies-assignment.onrender.com)## Features- Add, edit, and delete tasks.- Filter tasks based on status (**All, To-do, In Progress, Done**).- Mark expired tasks as **timeout**.- Click on **Expired Task** to view timeout tasks and click again to return home.- Fully responsive UI.## How to Use the Website1. **View Tasks:** Upon visiting the site, you'll see all available tasks.2. **Add Task:** Click the **Add Task** button to create a new task.3. **Edit Task:** Click the **Edit** button on any task to modify details.4. **Delete Task:** Click the **Delete** button to remove a task.5. **Filter Tasks:** Use the filters to view tasks by their status.6. **Expired Tasks:** Click **Expired Task** to view timed-out tasks. Click again to return to the main list.## Technologies Used### Frontend:- React + TypeScript + Vite- Tailwind CSS- Zustand (for state management)### Backend:- Node.js + Express- MongoDB (Mongoose ORM)- JSON Web Token (JWT) Authentication## Installation & Setup### **Frontend Setup**1. Clone the repository:   ```sh   git clone https://github.com/SagarKharat94440/Seequenze-Technologies-Assignment.git   cd Seequenze-Technologies-Assignment/Client   ```2. Install dependencies:   ```sh   npm install   ```3. Start the development server:   ```sh   npm run dev   ```### **Backend Setup**1. Navigate to the server folder:   ```sh   cd ../Server   ```2. Install dependencies:   ```sh   npm install   ```3. Start the server:   ```sh   npm run dev   ```---For any issues or feedback, please reach out via GitHub!
+# Seequenze Technologies Assignment
+
+This project is a full-stack task management application built using **React, TypeScript, and Vite** for the frontend and **Node.js with Express and MongoDB** for the backend.
+
+## Deployment Links
+
+- **Frontend URL:** [Seequenze Technologies Assignment](https://seequenze-technologies-assignment-ashen.vercel.app/)
+- **Backend URL:** [Seequenze Technologies API](https://seequenze-technologies-assignment.onrender.com)
+
+## Features
+
+- Add, edit, and delete tasks.
+- Filter tasks based on status (**All, To-do, In Progress, Done**).
+- Mark expired tasks as **timeout**.
+- Click on **Expired Task** to view timeout tasks and click again to return home.
+- Fully responsive UI.
+
+## How to Use the Website
+
+1. **View Tasks:** Upon visiting the site, you'll see all available tasks.
+2. **Add Task:** Click the **Add Task** button to create a new task.
+3. **Edit Task:** Click the **Edit** button on any task to modify details.
+4. **Delete Task:** Click the **Delete** button to remove a task.
+5. **Filter Tasks:** Use the filters to view tasks by their status.
+6. **Expired Tasks:** Click **Expired Task** to view timed-out tasks. Click again to return to the main list.
+
+## Technologies Used
+
+### Frontend:
+
+- React + TypeScript + Vite
+- Tailwind CSS
+- Zustand (for state management)
+
+### Backend:
+
+- Node.js + Express
+- MongoDB (Mongoose ORM)
+- JSON Web Token (JWT) Authentication
+
+## Installation & Setup
+
+### **Frontend Setup**
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/SagarKharat94440/Seequenze-Technologies-Assignment.git
+   cd Seequenze-Technologies-Assignment/Client
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+### **Backend Setup**
+
+1. Navigate to the server folder:
+   ```sh
+   cd ../Server
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the server:
+   ```sh
+   npm run dev
+   ```
+
+## Contributing
+
+---
+
+For any issues or feedback, please reach out via GitHub!
+
