@@ -4,8 +4,8 @@ This project is a full-stack task management application built using **React, Ty
 
 ## Deployment Links
 
-- **Frontend URL:** [Seequenze Technologies Assignment](https://seequenze-technologies-assignment-ashen.vercel.app/)
-- **Backend URL:** [Seequenze Technologies API](https://seequenze-technologies-assignment.onrender.com)
+- **Frontend URL:** [website](https://seequenze-technologies-assignment-ashen.vercel.app/)
+- **Backend URL:** [Backend API](https://seequenze-technologies-assignment.onrender.com)
 
 ## Features
 
@@ -44,8 +44,8 @@ This project is a full-stack task management application built using **React, Ty
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/SagarKharat94440/Seequenze-Technologies-Assignment.git
-   cd Seequenze-Technologies-Assignment/Client
+   git clone https://github.com/SagarKharat94440/TODO_List.git
+   cd TODO_List/Client
    ```
 2. Install dependencies:
    ```sh
