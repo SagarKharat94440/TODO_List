@@ -2,10 +2,6 @@
 
 This project is a full-stack task management application built using **React, TypeScript, and Vite** for the frontend and **Node.js with Express and MongoDB** for the backend.
 
-## Deployment Links
-
-- **Frontend URL:** [website](https://seequenze-technologies-assignment-ashen.vercel.app/)
-- **Backend URL:** [Backend API](https://seequenze-technologies-assignment.onrender.com)
 
 ## Features
 
